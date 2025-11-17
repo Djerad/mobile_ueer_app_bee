@@ -193,7 +193,7 @@ Future<void> logout(BuildContext context) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String? token = prefs.getString('access_token');
 
-    final url = Uri.parse("http://192.168.15.125:8000/api/auth/logout/");
+    final url = Uri.parse("http://ip:8000/api/auth/logout/");
     final response = await http.post(
       url,
       headers: {
