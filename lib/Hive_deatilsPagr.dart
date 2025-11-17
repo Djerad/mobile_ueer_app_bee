@@ -29,7 +29,7 @@ class _HiveDashboardPageState extends State<HiveDashboardPage> {
       SharedPreferences prefs = await SharedPreferences.getInstance();
       String? token = prefs.getString("access_token");
 
-      final url = Uri.parse("http://192.168.15.125:8000/api/hives/");
+      final url = Uri.parse("http://ip:8000/api/hives/");
       final response = await http.get(url, headers: {
         "Authorization": "Bearer $token",
         "Content-Type": "application/json",
