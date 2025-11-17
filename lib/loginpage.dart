@@ -21,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
 
   // API: LOGIN
   Future<Map<String, dynamic>> loginRequest(String email, String password) async {
-    final Uri url = Uri.parse("http://192.168.15.125:8000/api/auth/login/"); 
+    final Uri url = Uri.parse("http://ip:8000/api/auth/login/"); 
 
     final response = await http.post(
       url,
