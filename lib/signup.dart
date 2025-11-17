@@ -51,7 +51,7 @@ class _SignupPageState extends State<SignupPage> {
       "wilaya_name": wilayaNameController.text.trim(),
     };
 
-    final Uri url = Uri.parse("http://192.168.15.125:8000/api/auth/register/"); // Replace with your local IP
+    final Uri url = Uri.parse("http://ip:8000/api/auth/register/"); // Replace with your local IP
 
     try {
       final response = await http.post(
