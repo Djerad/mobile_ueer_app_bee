@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class AuthService {
-  final String baseUrl = "http:/192.168.15.125:8000/api/auth";
+  final String baseUrl = "http:/ip:8000/api/auth";
 
   Future<Map<String, dynamic>> login(String email, String password) async {
     final Uri url = Uri.parse("$baseUrl/login/");
